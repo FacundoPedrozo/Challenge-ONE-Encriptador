@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!--Para que no haya problema con el id-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css"> <!--Conexión al css--> 
+    <title>Encriptador</title> <!--Título-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Fuente de letra 1-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Fuente de letra 2-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<img src="imágenes/Logo.png" alt="Logo Letra A">
+	</header>
+	<main>
+		<section class="SectionA">
+			<textarea class="input-texto" cols="40" rows="6" placeholder="Introduzca su texto aquí"></textarea>
+            <div class="aviso" >
+                <img src="imágenes/exclamacion.png" alt="Exclamacion">
+                <h6>Solo letras minúsculas y sin acentos</h6>
+            </div>
+
+            <div class="botones">
+                <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+		</section>
+
+		<section class="SectionB">
+			<textarea class="mensaje" cols="18" rows="8"></textarea>
+            <button class="copiar" onclick="btncopiar()">Copiar</button>
+            <h3 id="ningunMensaje">Ningún mensaje fue encontrado</h3>
+            <h5 id="ingresaTexto">Ingresa el texto que quieras encriptar o desencritar</h5>
+		</section>
+
+	</main>
+
+	 <script src="script.js"></script><!--Conexión entre el archivo HTML y el archivo Javascript-->
+</body>
